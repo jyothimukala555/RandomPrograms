@@ -22,7 +22,7 @@ public class SimpleInterestCalculator {
    
    public BigDecimal CalculateTotalValue(int noOfYears) {
 	   BigDecimal noOfYearsBigDecimal = new BigDecimal(noOfYears);  //or .multiply(new BigDecimal(noOfYears);
-	   BigDecimal totalValue = principle.add(principle).multiply(interest).multiply(noOfYearsBigDecimal);
+	   BigDecimal totalValue = principle.multiply(interest).multiply(noOfYearsBigDecimal).add(principle);
 	     return totalValue;
    }
 
